@@ -1,0 +1,62 @@
+create and run a container:
+
+docker start <container>
+
+create a container:
+docker create <container>
+
+start a container :
+docker start <container>
+
+restart a container:
+docker restart <container>
+
+list active containers:
+docker ps
+
+list all containers, including stopped:
+docker ps -all
+
+list images:
+docker images
+
+remove a STOPPED container:
+docker rm <container>
+
+remove image:
+docker rmi <image>
+
+stop a container nicely:
+docker stop <container>
+
+kill a container (stop abruptly):
+docker kill <container>
+
+build a container from a Dockerfile
+docker build -t allexraduid/redis:latest .
+
+create a nginx server:
+docker run --name docker-nginx -p 80:80 -d nginx
+
+create an image from a running container:
+docker commit <name of the container>
+docker commit -c 'CMD ["<command>"]' <id / name of running of the container>
+
+
+---
+docker run -it --entrypoint "/bin/bash" ubuntu:latest
+https://vexxhost.com/resources/tutorials/how-to-run-nginx-in-a-docker-container-on-ubuntu-16-04/
+
+docker run --name docker-nginx -p 80:80 -d nginx
+https://stackoverflow.com/questions/27912917/how-to-configure-docker-port-mapping-to-use-nginx-as-an-upstream-proxy
+
+multiple nginx configuration reverse proxy:
+https://www.digitalocean.com/community/questions/how-to-host-multiple-docker-containers-on-a-single-droplet-with-nginx-reverse-proxy
+
+create a docker image from a 
+https://www.scalyr.com/blog/create-docker-image/
+
+
+
+
+
